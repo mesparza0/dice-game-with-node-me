@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marcos's Dice Battle: Player vs Bot</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="code.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Dice Battle: Player vs Bot</h1>
+        <p>Press the button or Enter to shoot the dice!</p>
+        <p>Rules: Either player must shoot 7 or 11 to win!</p>
+        
+        <p id="gameMessage"></p>
+        
+        <div class="game-container">
+            <div class="video-container">
+                <video id="winVideo" style="display: none; width: 100%;" controls>
+                    <source src="winner.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            
+            <div class="dice-section">
+                <div class="dice-container">
+                    <h2>Player</h2>
+                    <label for="die1">Die 1:</label>
+                    <input type="text" id="die1" readonly>
+                    <label for="die2">Die 2:</label>
+                    <input type="text" id="die2" readonly>
+                </div>
+                
+                <div class="dice-container">
+                    <h2>Bot</h2>
+                    <label for="botDie1">Die 1:</label>
+                    <input type="text" id="botDie1" readonly>
+                    <label for="botDie2">Die 2:</label>
+                    <input type="text" id="botDie2" readonly>
+                </div>
+                
+                <button id="rollButton" autofocus>Roll Dice</button>
+            </div>
+            
+            <div class="video-container">
+                <video id="lossVideo" style="display: none; width: 100%;" controls>
+                    <source src="loser.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

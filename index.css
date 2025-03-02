@@ -1,0 +1,98 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background: #000;
+    color: #ffd700;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    background: #222;
+    width: 80%;
+    margin: 50px auto;
+    padding: 20px;
+    box-shadow: 0 0 15px rgba(255, 215, 0, 0.6);
+    border-radius: 10px;
+}
+
+h1 {
+    font-size: 28px;
+    color: #ffd700;
+}
+
+.game-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.video-container {
+    width: 30%;
+}
+
+.dice-section {
+    width: 40%;
+    text-align: center;
+}
+
+.dice-container {
+    margin: 20px 0;
+    background: #333;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-top: 10px;
+    color: #ffd700;
+}
+
+input {
+    text-align: right;
+    width: 50px;
+    font-size: 18px;
+    padding: 5px;
+    border: 2px solid #ffd700;
+    border-radius: 5px;
+    background: #444;
+    color: #ffd700;
+}
+
+button {
+    background-color: #ffd700;
+    color: #000;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    box-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
+}
+
+button:hover {
+    background-color: #e6c200;
+}
+
+#winVideo {
+    transform: rotate(270deg);
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
+}
+
+
+#gameMessage {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 20px 0;
+    color: #ffd700;
+    background: #333;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(255, 215, 0, 0.5);
+}
